@@ -1,209 +1,251 @@
-<!DOCTYPE html>
-<!-- Template by Quackit.com -->
-<!-- Images by various sources under the Creative Commons CC0 license and/or the Creative Commons Zero license. 
-Although you can use them, for a more unique website, replace these images with your own. -->
-<html lang="en">
-
+<html>
 <head>
+<title>If you give them the chance.</title>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<style type="text/css">
+a:link, a:active, a:visited{
+font-family: arial;
+font-size: 11px;
+color: #ABFE0B;
+text-decoration: none;
+}
 
-    <title>Business 2</title>
+a:hover{
+font-family: arial;
+font-size: 11px;
+color: #ffffff;
+text-decoration: none;
+}
 
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+a.titlelink:link, a.titlelink:active, a.titlelink:visited{
+font: normal 13px book antiqua;
+color: #FEEA0B;
+text-decoration: none;
+cursor: help;
+padding-top: 2px;
+}
 
-    <!-- Custom CSS: You can use this stylesheet to override any Bootstrap styles and/or apply your own styles -->
-    <link href="css/custom.css" rel="stylesheet">
+a.titlelink:hover{
+font: normal 13px book antiqua;
+color: #FF9600;
+text-decoration: none;
+cursor: help;
+padding-top: 2px;
+}
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+body{
+font-family: arial;
+font-size: 10px;
+font-weight: none;
+color: #ffffff;
+background-color: #000000;
+background-repeat: x;
+background-position: fixed;
+}
 
-    <!-- Custom Fonts from Google -->
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-    
+#main{
+font-family: arial;
+font-size: 8pt;
+background-color: #292929;
+color: #A7A7A7;
+line-height: 13.5px;
+letter-spacing: 0px;
+text-align: justify;
+width: 460px;
+}
+
+#navi{
+background: none;
+text-align: right;
+font-family: georgia;
+line-height: 8px;
+font-size: 43px;
+letter-spacing: -4px;
+color: #9c9c9c;
+width: 600px;
+}
+
+.text{
+border: 1px solid #292929;
+background-color: #1F1F1F;
+padding: 20px;
+text-align: justify;
+}
+
+.h1{
+text-align: left;
+font-size: 16px;
+font-family: arial;
+line-height: 11px;
+letter-spacing: -1px;
+color: #FE0B61;
+text-transform: lowercase;
+}
+
+.icon{
+padding: 5px;
+border: 1px solid #454545;
+}
+
+.post{
+text-align: left;
+font-size: 11px;
+font-family: arial;
+color: #C5C5C5;
+line-height: 12px;
+}
+
+blockquote{
+background: #000000;
+font-family: arial;
+color: #4d4d4d;
+border-left: 4px solid #FE0B61;
+padding: 6px;
+}
+
+.blogger-labels{
+border-top: 1px solid #e5e5e5;
+font-size: 10px;
+padding-top: 5px;
+margin: 10px auto 0 auto;
+text-align: right;
+}
+
+b,strong{
+font-family: georgia;
+font-size: 9px;
+color: #FF9600;
+cursor: help;
+}
+
+i,em{
+font-family: georgia;
+font-size: 10px;
+color: #FEEA0B;
+cursor: help;
+}
+
+u{
+text-decoration: none;
+color: #FE0B61;
+border-bottom: 1px dotted #C3FF69;
+cursor: help;
+}
+
+::-moz-selection{
+background: #ccc;
+color: #333;
+}
+
+</style>
+
+<script>
+function changeNavigation(id)
+{document.getElementById('main').innerHTML=document.getElementById(id).innerHTML}
+</script>
 </head>
 
-<body>
+<noembed><body></noembed>
 
-    <!-- Navigation -->
-    <nav id="siteNav" class="navbar navbar-default navbar-fixed-top" role="navigation">
-        <div class="container">
-            <!-- Logo and responsive toggle -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">
-                	<span class="glyphicon glyphicon-fire"></span> 
-                	LOGO
-                </a>
-            </div>
-            <!-- Navbar links -->
-            <div class="collapse navbar-collapse" id="navbar">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="active">
-                        <a href="#">Home</a>
-                    </li>
-                    <li>
-                        <a href="#">Products</a>
-                    </li>
-					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="caret"></span></a>
-						<ul class="dropdown-menu" aria-labelledby="about-us">
-							<li><a href="#">Engage</a></li>
-							<li><a href="#">Pontificate</a></li>
-							<li><a href="#">Synergize</a></li>
-						</ul>
-					</li>
-                    <li>
-                        <a href="#">Contact</a>
-                    </li>
-                </ul>
-                
-            </div><!-- /.navbar-collapse -->
-        </div><!-- /.container -->
-    </nav>
+<br/>
 
-	<!-- Header -->
-    <header>
-        <div class="header-content">
-            <div class="header-content-inner">
-                <h1>Dramatically Engage</h1>
-                <p>Objectively innovate empowered manufactured products whereas parallel platforms.</p>
-                <a href="#" class="btn btn-primary btn-lg">Engage Now</a>
-            </div>
-        </div>
-    </header>
+<div align="center">
+<div id="navi">
+<div style="padding: 40px 5px 20px 5px;"/>
+<span style="color: #FE0B61;cursor: text;" onMouseover="this.style.color='#FBC8CB'" onMouseout="this.style.color='#FE0B61'" onClick="changeNavigation('entries')">don't </span>
+<span style="color: #FF9600;cursor: text;" onMouseover="this.style.color='#FBDAAA'" onMouseout="this.style.color='#FF9600'" onClick="changeNavigation('profile')">sell </span>
+<span style="color: #FEEA0B;cursor: text;" onMouseover="this.style.color='#FAF5BC'" onMouseout="this.style.color='#FEEA0B'" onClick="changeNavigation('tagboard')">your </span>
+<span style="color: #ABFE0B;cursor: text;" onMouseover="this.style.color='#E3FBB4'" onMouseout="this.style.color='#ABFE0B'" onClick="changeNavigation('links')">heart,</span>
+</div>
 
-	<!-- Intro Section -->
-    <section class="intro">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                	<span class="glyphicon glyphicon-apple" style="font-size: 60px"></span>
-                    <h2 class="section-heading">Completely synergize resource taxing relationships</h2>
-                    <p class="text-light">Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service.</p>
-                </div>
-            </div>
-        </div>
-    </section>
 
-	<!-- Content 1 -->
-    <section class="content">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6">
-                    <img class="img-responsive img-circle center-block" src="images/microphone.jpg" alt="">
-                </div>
-                <div class="col-sm-6">
-                	<h2 class="section-header">Best in Class</h2>
-                	<p class="lead text-muted">Holisticly predominate extensible testing procedures for reliable supply chains. Dynamically innovate resource-leveling customer service for state of the art customer service.</p>
-                	<a href="#" class="btn btn-primary btn-lg">Classify It</a>
-                </div>                
-                
-            </div>
-        </div>
-    </section>
+<div id="main">
+<Blogger>
+<div class="text">
+<div class="h1"><BlogDateHeader><$BlogDateHeaderDate$></BlogDateHeader></div>
+<a class="titlelink" href="<$BlogItemPermalinkURL$>" title="Link to this post"><$BlogItemTitle$></a>
+<table><tr>
+<td valign="top" width="110px"><div class="icon"><img src="http://i411.photobucket.com/albums/pp195/partystealer/fashtwo.png"></div></td>  
+<td><div class="post"><$BlogItemBody$></div></td>
+</tr></table>
+</div>
+<br/>
+</Blogger>
+</div>
+</div>
 
-	<!-- Content 2 -->
-     <section class="content content-2">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6">
-                	<h2 class="section-header">Superior Quality</h2>
-                	<p class="lead text-light">Holisticly predominate extensible testing procedures for reliable supply chains. Dynamically innovate resource-leveling customer service for state of the art customer service.</p>
-                	<a href="#" class="btn btn-default btn-lg">Test It</a>
-                </div>    
-                <div class="col-sm-6">
-                    <img class="img-responsive img-circle center-block" src="images/iphone.jpg" alt="">
-                </div>            
-                
-            </div>
-        </div>
-    </section>    
+<div id="entries" style="display: none;">
+<Blogger>
+<div class="text">
+<div class="h1"><BlogDateHeader><$BlogDateHeaderDate$></BlogDateHeader></div>
+<a class="titlelink" href="<$BlogItemPermalinkURL$>" title="Link to this post"><$BlogItemTitle$></a>
+<table><tr>
+<td valign="top" width="110px"><div class="icon"><img src="http://i411.photobucket.com/albums/pp195/partystealer/fashtwo.png"></div></td>  
+<td><div class="post"><$BlogItemBody$></div></td>
+</tr></table>
+</div>
+<br/>
+</Blogger>
+</div>
+</div>
+<div id="profile" style="display: none;">
+<div class="text">
+<div class="h1">i am not a saint</div>
+<br/>
+Hello, music is the <i>love</i> and I can't live without it because I'd lose my head. I like bright neon colours and <b>city highways</b>
+filled with red cars, rainy sunday afternoons and popcorn. I love eating fish but am not a fan of toothbrushes or homework. I hug Snoopy every night and eat cereal for breakfast, 
+lunch and dinner. I'm also a die-hard fan of Chocolate and Ice-Cream. I'd watch <u>Disney Channel</u> every hour of the day if I could. <br>
+</div>
+</div>
 
-    <!-- Promos -->
-	<div class="container-fluid">
-        <div class="row promo">
-        	<a href="#">
-				<div class="col-md-4 promo-item item-1">
-					<h3>
-						Unleash
-					</h3>
-				</div>
-            </a>
-            <a href="#">
-				<div class="col-md-4 promo-item item-2">
-					<h3>
-						Synergize
-					</h3>
-				</div>
-            </a>
-			
-			<a href="#">
-				<div class="col-md-4 promo-item item-3">
-					<h3>
-						Procrastinate
-					</h3>
-				</div>
-            </a>
-        </div>
-    </div><!-- /.container-fluid -->
+<div id="tagboard" style="display: none;">
+<div class="text">
+<div class="h1">voiceless</div>
+<br/>
+<center>Tagboard here <a href="http://cbox.ws">cbox</a> recommended. Max width 360px if you want this section to look decent. </center>
+</div>
+</div>
 
-	<!-- Content 3 -->
-     <section class="content content-3">
-        <div class="container">
-			<h2 class="section-header"><span class="glyphicon glyphicon-pushpin text-primary"></span><br> Sanity Check</h2>
-			<p class="lead text-muted">Holisticly predominate extensible testing procedures for reliable supply chains. Dynamically innovate resource-leveling customer service for state of the art customer service.</p> 
-                    <a href="#" class="btn btn-primary btn-lg">Check Now</a>               
-            </div>
-        </div>
-    </section>
-    
-	<!-- Footer -->
-    <footer class="page-footer">
-    
-    	<!-- Contact Us -->
-        <div class="contact">
-        	<div class="container">
-				<h2 class="section-heading">Contact Us</h2>
-				<p><span class="glyphicon glyphicon-earphone"></span><br> +1(23) 456 7890</p>
-				<p><span class="glyphicon glyphicon-envelope"></span><br> info@example.com</p>
-        	</div>
-        </div>
-        	
-        <!-- Copyright etc -->
-        <div class="small-print">
-        	<div class="container">
-        		<p>Copyright &copy; Example.com 2015</p>
-        	</div>
-        </div>
-        
-    </footer>
+<div id="links" style="display: none;">
+<div class="text">
+<div class="h1">exeunt</div>
+ <br/>
+ <a href="http://link.com">friend</a> <br>
+ <a href="http://link.com">friend</a> <br>
+ <a href="http://link.com">friend</a> <br>
+ <a href="http://link.com">friend</a> <br>
+ <a href="http://link.com">friend</a> <br>
+ <a href="http://link.com">friend</a> <br>
+</div>
+<br/>
 
-    <!-- jQuery -->
-    <script src="js/jquery-1.11.3.min.js"></script>
+<div class="text">
+<div class="h1">rewind</div>
+<br/>
+<b>By post:</b>
+<br/>
+<BloggerPreviousItems>
+<a href="<$BlogItemPermalinkURL$>"><$BlogPreviousItemTitle$></a><br/>
+</BloggerPreviousItems>
+<br/>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+<b>By month:</b>
+<br/>
+<BloggerArchives>
+<a href='<$BlogArchiveURL$>'><$BlogArchiveName$></a><br/>
+</BloggerArchives></div><br>
 
-    <!-- Plugin JavaScript -->
-    <script src="js/jquery.easing.min.js"></script>
-    
-    <!-- Custom Javascript -->
-    <script src="js/custom.js"></script>
+<div class="text">
+<div class="h1">layout</div>
+<br/>
+<b>design:</b> <a href="http://blogskins.com/me/anxiety" target="_blank">anxiety\clara</a><br/>
+<b>codes:</b> <a href="http://blogskins.com/me/corsages" target="_blank">mary</a><br/>
+<b>references:</b> <a href="http://blogskins.com/me/pullthetrigger">huiting</a><br>
+<b>icon(changeable):</b> <a href="http://sealedcards.livejournal.com">sealedcards</a><br>
+<b>host:</b> <a href="http://www.blogger.com" target="_blank">blogger</a>
+</div>
 
+</div>
+<div style="position:absolute; padding: 5px; width:370; height: auto; left: 464; background: transparent;"><span style="font-size: 31px; letter-spacing: -3px; font-family: georgia;"><span style="color: #FE0B61;">don't <span style="color: #FEEA0B">say we're not</span> <span style="color: #FF9600;">meant to be</span><span style="color:#ABFE0B">.</span></div>
 </body>
-
 </html>
